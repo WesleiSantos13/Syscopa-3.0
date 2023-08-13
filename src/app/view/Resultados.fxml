@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="1099.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.ResultadosController">
+   <children>
+      <AnchorPane prefHeight="53.0" prefWidth="1099.0" style="-fx-background-color: #04b5c2;">
+         <children>
+            <Label layoutX="424.0" layoutY="4.0" prefHeight="46.0" prefWidth="251.0" text="RESULTADOS" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold Italic" size="31.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="559.0" prefHeight="53.0" prefWidth="1099.0" style="-fx-background-color: #04b5c2;" />
+      <ImageView fitHeight="411.0" fitWidth="982.0" layoutX="71.0" layoutY="118.0">
+         <image>
+            <Image url="@../../podio.png" />
+         </image>
+         <effect>
+            <ColorAdjust hue="0.68" />
+         </effect>
+      </ImageView>
+      <Label fx:id="label2" layoutX="132.0" layoutY="268.0" prefHeight="35.0" prefWidth="225.0" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label1" layoutX="422.0" layoutY="192.0" prefHeight="35.0" prefWidth="225.0" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label3" layoutX="696.0" layoutY="317.0" prefHeight="35.0" prefWidth="225.0" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="voltar" layoutX="32.0" layoutY="525.0" mnemonicParsing="false" onAction="#voltarAction" prefHeight="27.0" prefWidth="225.0" text="VOLTAR AO MENU PRINCIPAL">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="podio" layoutX="32.0" layoutY="491.0" mnemonicParsing="false" onAction="#podioAction" prefHeight="27.0" prefWidth="225.0" text="EXIBIR PÓDIO">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelError" layoutX="8.0" layoutY="101.0" prefHeight="35.0" prefWidth="580.0" textFill="#ff0303">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="489.0" prefWidth="787.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.ClassificacaoController">
+   <children>
+      <AnchorPane layoutY="-7.0" prefHeight="60.0" prefWidth="787.0" style="-fx-background-color: #04b5c2;">
+         <children>
+            <Label layoutX="82.0" layoutY="14.0" prefHeight="46.0" prefWidth="643.0" text="CLASSIFICAÇÃO PARA AS OITAVAS DE FINAL" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <GridPane layoutX="327.0" layoutY="51.0" prefHeight="434.0" prefWidth="461.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TableView fx:id="Tabela" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </GridPane>
+      <Button fx:id="classificar" layoutX="39.0" layoutY="348.0" mnemonicParsing="false" onAction="#classificarAction" prefHeight="26.0" prefWidth="262.0" text="FAZER CLASSIFICAÇÃO DAS SELEÇÕES">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Button>
+      <Label fx:id="LabelError" layoutX="4.0" layoutY="222.0" prefHeight="46.0" prefWidth="322.0" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="172.0" fitWidth="328.0" layoutY="52.0">
+         <image>
+            <Image url="@../../2022.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="voltar" layoutX="40.0" layoutY="420.0" mnemonicParsing="false" onAction="#voltarAction" prefHeight="25.0" prefWidth="262.0" text="VOLTAR AO MENU PRINCIPAL">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Button>
+      <Button fx:id="Excluir" layoutX="39.0" layoutY="385.0" mnemonicParsing="false" onAction="#ExcluirAction" prefHeight="25.0" prefWidth="262.0" text="EXCLUIR SELEÇÕES CLASSIFICADAS">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
